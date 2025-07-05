@@ -1,7 +1,7 @@
-export const RUN = {
-    FORWARD: 'forward',
-    TURN_LEFT: 'turn_left',
-    TURN_RIGHT: 'turn_right',
+export const LANE = {
+    CENTER: 'center',
+    LEFT: 'left',
+    RIGHT: 'right',
 };
 
 export const GAME_BLOCK = {
@@ -18,4 +18,4 @@ export const GAME_STATUS = {
     ERROR: 'error'
 }
 
-export const GAME = [RUN, GAME_BLOCK, GAME_STATUS];
+export const GAME = [LANE, GAME_BLOCK, GAME_STATUS];
