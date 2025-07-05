@@ -6,8 +6,8 @@ Service to generate random values.
 import { GAME_BLOCK } from '../const/Game.js';
 
 function rollDice() {
-    min = Math.ceil(1);
-    max = Math.floor(6);
+    const min = Math.ceil(1);
+    const max = Math.floor(6);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 

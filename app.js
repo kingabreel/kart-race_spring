@@ -1,5 +1,22 @@
-import { createPlayer } from "./src/service/game.js";
+/*
+Main entry point for the Kart Simulator game.
 
-const me = await createPlayer();
+@author kingabreel
+*/
 
-console.log(`You have selected: ${me.getName()}`);
+import { createPlayer, movePlayer, checkForConfrontations, createBotPlayers, play } from "./src/service/game.js";
+
+const TOTAL_BOTS = 2;
+
+async function main() {
+    const me = await createPlayer();
+    if (!me) return;
+
+    console.log(`You have selected: ${me.getName()}`);
+
+    createBotPlayers(me, TOTAL_BOTS);
+
+    await play();
+}
+
+main();

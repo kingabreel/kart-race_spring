@@ -27,4 +27,8 @@ export class Player {
     getPosition() {
         return this.position;
     }
+
+    setPosition(newPosition) {
+        this.position = newPosition;
+    }
 }
